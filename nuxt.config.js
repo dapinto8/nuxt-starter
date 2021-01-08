@@ -7,6 +7,7 @@ export default {
 
   // Nuxt env (https://nuxtjs.org/api/configuration-env)
   env: {
+    siteUrl: '',
     apiURL: process.env.API_URL
   },
 
@@ -22,7 +23,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: '' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Nuxt Starter' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@dapintor8' },
+      { hid: 'twitter:creator', name: 'twitter:creator', content: '@dapintor8' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
